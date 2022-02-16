@@ -1,0 +1,17 @@
+AWS Parallel Cluster
+
+step-1 Create an ec2 ubuntu Instance with Pre-requisites Installed through CFT
+       
+step-2 verify the following in the ec2 instance which got created in step-1
+       pcluster version
+	   node --version
+	   aws --version
+step-3 clone the git repo which includes cluster.sh
+       git clone https://github.com/deepashre/Parallel-Cluster.git
+step-4 sudo chmod +x Parallel-Cluster/cluster.sh
+step-5 Provide your aws credentials
+       aws configure
+	   pass the AWS Access Key ID,AWS Secret Access Key,Default region name
+step-6 execute the shell script 
+       Parallel-Cluster/cluster.sh
+step-7 Provide user inputs while 1st stack is getting created as part of the shell script
