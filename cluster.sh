@@ -12,9 +12,10 @@ echo "Modifying cluster-config.yaml file"
 if [ -f "./cluster-config.yaml" ]; then
         echo "cluster-config.yaml exists"
         sed -i '$aTags:\n- Key: \"Schedule\"\n  Value: \"Bangalore-office-hours\"' cluster-config.yaml
-        sed -i '/^Tags.*/a - Key: \"Project\"\n  Value: \"HBC3.03\"' cluster-config.yaml
-        sed -i '/^Tags.*/a - Key: \"Cost\"\n  Value: \"50\"' cluster-config.yaml
-        sed -i '/^Tags.*/a - Key: \"Project_owner\"\n  Value: \"RL\"' cluster-config.yaml
+        sed -i '/^Tags.*/a - Key: \"Project_abhi\"\n  Value: \"1\"' cluster-config.yaml
+        sed -i '/^Tags.*/a - Key: \"A\"\n  Value: \"2\"' cluster-config.yaml
+        sed -i '/^Tags.*/a - Key: \"Cost_abhi\"\n  Value: \"11\"' cluster-config.yaml
+        sed -i '/^Tags.*/a - Key: \"Project_owner_abhi\"\n  Value: \"Deepa_maam\"' cluster-config.yaml
         echo "Modified cluster-config.yaml with Tags"
         source ./apc-ve/bin/activate
         echo "Virtual Environmement Activated"
